@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript - Exemplo 9</title>
+
+    <script type="text/javascript">
+        function clique() {
+            alert("O botão foi clicado");
+        }
+
+        function passaMouse() {
+            alert("Passou o mouse em cima da Logomarca!");
+        }
+
+        function alterarInput() {
+            confirm("Você alterou esse campo?");
+        }
+
+        function validarFormulario() {
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="clique()">
+        Clique me
+    </button>
+    <img src="logo.jpg" alt="logo" onmouseover="passaMouse()">
+
+    <form action="" onsubmit="return validarFormulario()">
+        <input type="text" onchange="alterarInput()
+        ">
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
